@@ -145,27 +145,6 @@ Todas las páginas heredan desde `base.html`, que contiene:
 - Navegación
 - Encabezado y pie de página
 
-Ejemplo:
-```html
-{% extends 'blog/base.html' %}
-{% block content %}
-<h2>Crear Autor</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Guardar</button>
-</form>
-{% endblock %}
-```
-
----
-
-## 🪴 Posibles mejoras futuras
-
-- Agregar **paginación** a la lista de posts.  
-- Implementar **autenticación y permisos** (usuarios logueados).  
-- Mejorar el estilo con Bootstrap o Tailwind.  
-- Agregar campo de imagen para cada post.  
 
 ---
 
@@ -174,17 +153,3 @@ Ejemplo:
 Proyecto creado por **de la Fuente Affonso**.  
 Uso educativo para aprendizaje de Django y patrón MVT.
 
----
-
-## 📁 Subir a GitHub
-
-```bash
-git init
-git add .
-git commit -m "Primera entrega del proyecto Django"
-git branch -M main
-git remote add origin https://github.com/<tu_usuario>/TuPrimeraPagina_de_la_Fuente_Affonso.git
-git push -u origin main
-```
-
-Listo para entregar 🎓
