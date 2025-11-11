@@ -1,0 +1,1 @@
+{% extends 'blog/base.html' %}{% block content %}<form method='get'>{{ form.as_p }}<button>Buscar</button></form>{% for p in posts %}<li>{{ p.titulo }}</li>{% endfor %}{% endblock %}
